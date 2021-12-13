@@ -15,7 +15,7 @@ jobs:
           echo $GITHUB_WORKSPACE
           echo "${{ github.token }}"
       - name: Checkout
-        uses: action/checkout@v1
+        uses: actions/checkout@v1
       - name: List Files after Checkout
         run: |
           pwd
