@@ -33,7 +33,7 @@ jobs:
         run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
         id: extract_branch
       - name: sonarqube 
-        uses: sonarsource/sonarqube-scan-action@master
+        #uses: sonarsource/sonarqube-scan-action@master
         run: |
           echo ${{ github.event.number }}
           echo ${{ steps.extract_branch.outputs.branch }}
